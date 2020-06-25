@@ -6,14 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Organizable</title>
   <link rel="stylesheet" href="./assets/styles/main.css">
-  <link rel="stylesheet" href="./assets/styles/header.css">
   <link rel="stylesheet" href="./assets/styles/dashboard.css">
 </head>
 
 <body>
-  <header class="header flex justify-center align-items-center">
-    <img src="./assets/images/logo.png" alt="Organizable">
-  </header>
+  <default-header></default-header>
   <main class="main container flex justify-center">
     <lateral-menu active-item="closed"></lateral-menu>
     <section class="main-section">
@@ -22,6 +19,7 @@
       </div>
     </section>
   </main>
+  <script src="./components/DefaultHeader.js"></script>
   <script src="./components/LateralMenu.js"></script>
 </body>
 
