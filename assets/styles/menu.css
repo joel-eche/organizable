@@ -1,0 +1,32 @@
+.lateral-section {
+  width: 20%;
+  height: 100%;
+  min-width: 240px;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-bottom: 16px;
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.menu__item__button {
+  background: #E4F0F6;
+  border-radius: 4px;
+}
+
+.menu-active {
+  border-radius: 4px;
+  background: #E4F0F6;
+  color: #0079BF;
+}
+
+.list-undecorated {
+  list-style: none;
+  padding: 0px;
+}
