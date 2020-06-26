@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizable</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/dashboard.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organizable</title>
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard.css">
-</head>
-
-<body>
-  <default-header></default-header>
-  <main class="main container flex justify-center">
-    <lateral-menu active-item="closed"></lateral-menu>
-    <section class="main-section">
-      <div id="my-boards-section">
-        My boards
-      </div>
-    </section>
-  </main>
-  <script src="./components/DefaultHeader.js"></script>
-  <script src="./components/LateralMenu.js"></script>
-</body>
-
+  <body>
+    <default-header></default-header>
+    <main class="main container flex justify-center">
+      <lateral-menu active-item="closed"></lateral-menu>
+      <section class="main-section">
+        <div id="my-boards-section">
+          <div class="closed-board"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./components/DefaultHeader.js"></script>
+    <script type="module" src="./components/LateralMenu.js"></script>
+    <script type="module" src="./js/ListBoards.js"></script>
+    <script type="module" src="./components/BoardItem.js"></script>
+    <script type="module" src="./components/CreateBoard.js"></script>
+  </body>
 </html>
