@@ -58,13 +58,15 @@ class Board extends HTMLElement {
           starredWrapper.appendChild(this);
           this.starred = true;
         }
-
+         
         this.setStarredClass();
+        const dataUser = JSON.parse(localStorage.getItem("userStrg"));
+
         fetch(`http://localhost:3000/boards/${this.id}`, {
           method: "PATCH",
           body: JSON.stringify({ starred: this.starred }),
           headers: {
-            Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+            Authorization: `Token token="${dataUser.token}"`,
             "Content-Type": "application/json",
           },
         });
@@ -87,11 +89,12 @@ class Board extends HTMLElement {
     closeButton.addEventListener("click", () => {
       const myBoardWrapper = document.querySelector(".my-boards-wrapper");
       myBoardWrapper.removeChild(this);
+      const dataUser = JSON.parse(localStorage.getItem("userStrg"));
       fetch(`http://localhost:3000/boards/${this.id}`, {
         method: "PATCH",
         body: JSON.stringify({ closed: true }),
         headers: {
-          Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+          Authorization: `Token token="${dataUser.token}"`,
           "Content-Type": "application/json",
         },
       });
@@ -112,11 +115,11 @@ class Board extends HTMLElement {
       const closedBoards = document.querySelector(".closed-board");
 
       closedBoards.removeChild(this);
-
+      const dataUser = JSON.parse(localStorage.getItem("userStrg"));
       fetch(`http://localhost:3000/boards/${this.id}`, {
         method: "DELETE",
         headers: {
-          Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+          Authorization: `Token token="${dataUser.token}"`,
           "Content-Type": "application/json",
         },
       });
@@ -130,12 +133,13 @@ class Board extends HTMLElement {
       this.boardContainer.classList.remove("closed");
       this.boardContainer.classList.add("unstarred");
       closedBoards.removeChild(this);
-
+      
+      const dataUser = JSON.parse(localStorage.getItem("userStrg"));
       fetch(`http://localhost:3000/boards/${this.id}`, {
         method: "PATCH",
         body: JSON.stringify({ closed: false, starred: false }),
         headers: {
-          Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+          Authorization: `Token token="${dataUser.token}"`,
           "Content-Type": "application/json",
         },
       });

@@ -4,10 +4,11 @@ const closedBoards = document.querySelector(".closed-board");
 const starredWrapper = document.querySelector(".starred-wrapper");
 
 export async function getBoards() {
+  const dataUser = JSON.parse(localStorage.getItem("userStrg"));
   const response = await fetch("http://localhost:3000/boards", {
     method: "GET",
     headers: {
-      Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+      Authorization: `Token token="${dataUser.token}"`,
       "Content-Type": "application/json",
     },
   });

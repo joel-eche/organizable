@@ -16,7 +16,7 @@ const returnMenuStructure = (activeItem) => {
             <a class="menu__item__link" href="profile.html">My profile</a>
           </li>
           <li class="menu__item">
-            <button class="menu__item__link">Log out</button>
+            <button id="logout" class="menu__item__link">Log out</button>
           </li>
         </ul>
       </nav>

@@ -2,6 +2,7 @@ document.getElementById("logout").addEventListener("click", (event) => {
   logout();
 });
 
+
 function logout() {
   const dataUser = JSON.parse(localStorage.getItem("userStrg"));
   console.log(dataUser);

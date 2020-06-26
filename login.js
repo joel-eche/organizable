@@ -39,7 +39,7 @@ function loginUser() {
         const dataUser = JSON.parse(localStorage.getItem("userStrg"));
         console.log(dataUser);
         console.log(data.email);
-        window.location.href = "main.html";
+        window.location.href = "index.html";
       }
     })
     .catch((error) => console.log(error));

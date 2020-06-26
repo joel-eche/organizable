@@ -64,12 +64,12 @@ class CreateBoard extends HTMLElement {
       if (board.color === undefined) {
         board.color = "blue";
       }
-
+      const dataUser = JSON.parse(localStorage.getItem("userStrg"));
       const response = await fetch("http://localhost:3000/boards", {
         method: "POST",
         body: JSON.stringify(board),
         headers: {
-          Authorization: 'Token token="R96umggzcAdz4sYiyHZLRDhT"',
+          Authorization: `Token token="${dataUser.token}"`,
           "Content-Type": "application/json",
         },
       });
