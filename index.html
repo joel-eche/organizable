@@ -12,40 +12,46 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/35d6a5945d.js"
-      crossorigin="anonymous"
-    ></script>
+    
   </head>
 
   <body>
+    <div class="overlay hide"> <create-board-form></create-board-form></div>
     <default-header></default-header>
     <main class="main container flex justify-center">
       <lateral-menu active-item="index"></lateral-menu>
       <section class="main-section">
         <div id="my-boards-section">
-          <p class="section-board__title">
-            <img
-              class="section-board__icon"
-              src="Vector (12).png"
-              alt="star"
-            />Your Starred Boards
-          </p>
-          <div class="boards-wrapper">
-            <board-item title="Home"></board-item>
+          <div>
+            <p class="section-board__title">
+              <img
+                class="section-board__icon"
+                src="./assets/images/Vector (12).png"
+                alt="star"
+              />Your Starred Boards
+            </p>
+            <div class="starred-wrapper">
+              <board-item title="Home"></board-item>
+            </div>
           </div>
+          
           <div class="my-boards">
-            <p class="section-board__title"><img class ="section-board__icon" src="Vector (13).png" alt="curly braces"> Your Boards</p>
-            <div class="boards-wrapper">
+            <p class="section-board__title"><img class ="section-board__icon" src="./assets/images/Vector (13).png" alt="curly braces"> Your Boards</p>
+            <div class="my-boards-wrapper">
+              <board-item title="DOTA"></board-item>
               <board-item title="DOTA"></board-item>
           </div>
         </div>
-        <button class="btn-create-board">Create a new Board</button>
+        <button class="btn-create-new-board">Create a new Board</button>
       </section>
     </main>
 
-    <script src="./components/DefaultHeader.js"></script>
-    <script src="./components/LateralMenu.js"></script>
-    <script src="./components/board.js"></script>
+    <script type= "module" src="./components/DefaultHeader.js"></script>
+    <script type= "module" src="./components/LateralMenu.js"></script>
+    <script type= "module" src="./js/ListBoards.js"></script>
+    <script type= "module" src="./components/BoardItem.js"></script>
+    <script type= "module" src="./components/CreateBoard.js"></script>
+  
+  
   </body>
 </html>

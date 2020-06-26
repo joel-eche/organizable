@@ -1,87 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: #172B4D;
-}
-
 .main-board {
-    max-width: 602px;
-    margin: auto;
-    margin-top: 32px;
+  max-width: 602px;
+  margin: auto;
+  margin-top: 32px;
 }
 
 .section-board__starred {
-    margin-bottom: 16px;
-     
+  margin-bottom: 16px;
 }
 
-.section-board__title{
-    margin-bottom: 16px;
-    margin-left: 40px;
+.section-board__title {
+  margin-bottom: 16px;
+  margin-left: 40px;
 }
 
 .section-board__icon {
-    padding-right: 5px;
-    vertical-align: text-top;
+  padding-right: 5px;
+  vertical-align: text-top;
 }
 
-.boards-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.my-boards-wrapper,
+.starred-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .board__container {
-    width: 190px;
-    height: 96px;
-    background-color: #4BBF6B;
-    border-radius: 3px;
-    padding: 8px;
-    margin-bottom: 16px;
-    position: relative;
+  width: 190px;
+  height: 96px;
+  background-color: #4bbf6b;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .board-title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-.btn-create-board{
-    width: 190px;
-    background-color: #F0F2F5;
-    border-style: none;
-    text-align: center;
-    padding: 38px 26px;
+.btn-create-new-board {
+  width: 190px;
+  background-color: #f0f2f5;
+  border-style: none;
+  text-align: center;
+  padding: 38px 26px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
-.fa-star {
-    position: absolute;
-    right: 12px;
-    bottom: 12px;
-    color:#C3BE0E;
+.icon-star {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  color: #c3be0e;
 }
 
-
-.fa-window-close {
-    position: absolute;
-    right: 38px;
-    bottom: 12px;
+.icon-close-board {
+  position: absolute;
+  right: 38px;
+  bottom: 12px;
 }
 
-.fa-star:hover, .fa-window-close:hover{
-    color: #F0F2F5;
+.board__container.starred:hover .icon-star-2 {
+  display: inline;
 }
 
+.board__container.unstarred:hover .icon-star-1 , .board__container.unstarred:hover .icon-close-board{
+  display: inline;
+}
 
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(63, 63, 63, 0.8);
+  z-index: 1;
+  height: 100%;
+}
