@@ -51,14 +51,16 @@
   display: none;
 }
 
-.icon-star, .icon {
+.icon-star,
+.icon {
   position: absolute;
   right: 12px;
   bottom: 12px;
 
 }
 
-.icon-close-board, .icon-2 {
+.icon-close-board,
+.icon-2 {
   position: absolute;
   right: 38px;
   bottom: 12px;
@@ -73,8 +75,9 @@
   display: inline;
 }
 
-.board__container.closed:hover .icon-trash, .board__container.closed:hover .icon-recover {
-    display: inline;
+.board__container.closed:hover .icon-trash,
+.board__container.closed:hover .icon-recover {
+  display: inline;
 }
 
 .overlay {
@@ -88,4 +91,3 @@
   height: 100%;
 }
 
-.icon

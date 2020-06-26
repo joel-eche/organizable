@@ -102,9 +102,6 @@ class Board extends HTMLElement {
     if (this.closed) {
       this.boardContainer.classList.add("closed");
       this.boardContainer.classList.remove("unstarred");
-      this.shadowRoot.querySelector(".icon-trash").classList.toggle("hide");
-      this.shadowRoot.querySelector(".icon-recover").classList.toggle("hide");
-      this.shadowRoot.querySelector(".icon-star-1").classList.toggle("hide");
     }
   }
 
