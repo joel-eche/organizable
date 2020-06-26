@@ -26,22 +26,25 @@ const getBoardListStructure = (data_list) => {
       </div>
       <div class="board-list__footer">
         <div>
-          <button class="board-list__footer_btn-add-another-card">
+          <button id="btn-add-another-card" class="board-list__footer_btn-add-another-card">
             <i class="fas fa-plus"></i>
             Add another card
           </button>
         </div>
-        <div>
-          <form action="" method="post">
-            <input type="text" name="" id="" placeholder="Enter a title for this card..."
-              class="board-list__footer__form-title-card">
-            <div class="board-list__footer_control-form">
-              <button type="submit" class="board-list__footer_btn-add-card">Add Card</button>
-              <button class="board-list__footer__btn-hide-form">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-          </form>
+        <div id="form-add-card" class="hide">
+          <input
+            type="text"
+            name="card-title"
+            id="card-title"
+            placeholder="Enter a title for this card..."
+            class="board-list__footer__form-title-card"
+          >
+          <div class="board-list__footer_control-form">
+            <button id="btn-add-card" type="button" class="board-list__footer_btn-add-card">Add Card</button>
+            <button id="btn-hide-form" class="board-list__footer__btn-hide-form">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -59,6 +62,24 @@ class BoardList extends HTMLElement {
     template_board_list.innerHTML = getBoardListStructure(data_list);
     this.shadowRoot.appendChild(template_board_list.content.cloneNode(true));
     
+    // add listeners
+    this.shadowRoot.getElementById("btn-add-another-card").addEventListener("click", () => {
+      // show form and hide itself
+      this.shadowRoot.getElementById("form-add-card").classList.remove("hide");
+      this.shadowRoot.getElementById("btn-add-another-card").classList.add("hide");
+    });
+
+    this.shadowRoot.getElementById("btn-hide-form").addEventListener("click", () => {
+      // hide form and show btn-add-another-card
+      this.shadowRoot.getElementById("form-add-card").classList.add("hide");
+      this.shadowRoot.getElementById("btn-add-another-card").classList.remove("hide");
+    });
+
+    this.shadowRoot.getElementById("btn-add-card").addEventListener("click", () => {
+      console.log('click')
+    });
+
+
   }
 }
 
