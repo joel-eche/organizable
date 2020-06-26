@@ -1,7 +1,7 @@
 const template_board_list = document.createElement("template");
 
 const getBoardListStructure = (data_list) => {
-  let {name} = data_list;
+  let {name, cards} = data_list;
 
   return `
   <link rel="stylesheet" href="./../../assets/styles/board-list.css">
@@ -22,21 +22,7 @@ const getBoardListStructure = (data_list) => {
         </form>
       </header>
       <div class="board-list__body">
-        <div class="board-list-cards">
-          <div class="board-list-card">
-            <div class="board-list-card__tags">
-              <div class="board-list-card__tag"></div>
-              <div class="board-list-card__tag"></div>
-            </div>
-            <div class="board-list-card__body">
-              <p class="board-list-card__body-title">Login & logout</p>
-              <span class="board-list-card__body-checklist">
-                <i class="far fa-check-square"></i>
-                <span>0/2</span>
-              </span>
-            </div>
-          </div>
-        </div>
+        <board-list-cards cards='${JSON.stringify(cards)}'></board-list-cards>
       </div>
       <div class="board-list__footer">
         <div>
@@ -69,8 +55,10 @@ class BoardList extends HTMLElement {
 
   connectedCallback() {
     const data_list = JSON.parse(this.getAttribute("data-list"));
+    console.log(data_list)
     template_board_list.innerHTML = getBoardListStructure(data_list);
     this.shadowRoot.appendChild(template_board_list.content.cloneNode(true));
+    
   }
 }
 

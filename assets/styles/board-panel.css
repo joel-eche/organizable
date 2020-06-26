@@ -1,5 +1,5 @@
 .board-panel {
-  height: calc(100% - 40px  );
+  /*height: calc(100% - 40px  );*/
 }
 
 .board-panel__body {

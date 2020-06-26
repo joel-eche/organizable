@@ -55,6 +55,7 @@
   color: #5E6C84;
 }
 .board-list__footer__form-title-card {
+  box-sizing: border-box;
   width: 100%;
   padding: 2px 8px;
   margin-bottom: 10px;

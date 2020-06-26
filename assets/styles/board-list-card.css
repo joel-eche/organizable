@@ -1,5 +1,6 @@
 .board-list-card {
   padding: 4px 8px;
+  margin-bottom: 8px;
   background: #FFFFFF;
   box-shadow: 0px 1px 0px rgba(9, 30, 66, 0.25);
   border-radius: 3px;
@@ -13,7 +14,6 @@
   width: 40px;
   height: 8px;
   margin-right: 4px;
-  background: #0079BF; /* HACER DINÄMICO*/
   border-radius: 4px;
 }
 
@@ -27,4 +27,34 @@
 .board-list-card__body-checklist {
   font-size: 12px;
   color: #5E6C84;
+}
+
+
+/* colors */
+.blue {
+  background-color: #0079BF;
+}
+.orange {
+  background-color: #D29034;
+}
+.green {
+  background-color: #519839;
+}
+.red {
+  background-color: #B04632;
+}
+.purple {
+  background-color: #89609E;
+}
+.pink {
+  background-color: #CD5A90;
+}
+.lime {
+  background-color: #4BBF6B;
+}
+.sky {
+  background-color: #0AAECB;
+}
+.grey {
+  background-color: #838C90;
 }

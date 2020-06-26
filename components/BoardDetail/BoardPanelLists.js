@@ -22,6 +22,8 @@ class BoardPanelLists extends HTMLElement {
     lists.forEach(l => {
       let list = document.createElement("board-list");
       list.setAttribute("data-list", JSON.stringify(l));
+      console.log(list)
+      console.log(JSON.stringify(l))
       this.shadowRoot.getElementById("board-lists").appendChild(list)
     });
   }
