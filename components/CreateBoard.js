@@ -65,7 +65,7 @@ class CreateBoard extends HTMLElement {
         board.color = "blue";
       }
 
-      await fetch("http://localhost:3000/boards", {
+      const response = await fetch("http://localhost:3000/boards", {
         method: "POST",
         body: JSON.stringify(board),
         headers: {
@@ -73,8 +73,13 @@ class CreateBoard extends HTMLElement {
           "Content-Type": "application/json",
         },
       });
+       const result = await response.json();
+    
 
-      newBoard(board);
+      const newBoardAdded = newBoard(result);
+      const myBoardWrapper = document.querySelector(".my-boards-wrapper");
+      myBoardWrapper.appendChild(newBoardAdded);
+    
       this.formNewBoard.elements.title.value = "";
       this.formNewBoard.style.background = "#0079BF";
       const overlay = document.querySelector(".overlay");

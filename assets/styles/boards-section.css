@@ -51,14 +51,14 @@
   display: none;
 }
 
-.icon-star {
+.icon-star, .icon {
   position: absolute;
   right: 12px;
   bottom: 12px;
-  color: #c3be0e;
+
 }
 
-.icon-close-board {
+.icon-close-board, .icon-2 {
   position: absolute;
   right: 38px;
   bottom: 12px;
@@ -68,8 +68,13 @@
   display: inline;
 }
 
-.board__container.unstarred:hover .icon-star-1 , .board__container.unstarred:hover .icon-close-board{
+.board__container.unstarred:hover .icon-star-1,
+.board__container.unstarred:hover .icon-close-board {
   display: inline;
+}
+
+.board__container.closed:hover .icon-trash, .board__container.closed:hover .icon-recover {
+    display: inline;
 }
 
 .overlay {
@@ -82,3 +87,5 @@
   z-index: 1;
   height: 100%;
 }
+
+.icon
