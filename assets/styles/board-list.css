@@ -1,0 +1,115 @@
+.board-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8px;
+  margin-right: 8px;;
+  width: 272px;
+  border-radius: 3px;
+  background-color: #EBECF0;
+}
+.board-list * {
+  font-family: Roboto;
+}
+
+.board-list__header {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-list__title-text, .board-list__title-input{
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #172B4D;
+}
+.board-list__title-input {
+  height: 24px;
+  padding-left: 8px;
+  background: #FFFFFF;
+  border: 1px solid #0079BF;
+  border-radius: 3px;
+}
+
+.board-list__delete {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer board list*/
+.board-list__footer {
+  margin: 10px 8px 10px 8px;
+}
+
+.board-list__footer_btn-add-another-card {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #5E6C84;
+}
+.board-list__footer__form-title-card {
+  width: 100%;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+  border: 1px solid #0079BF;
+  border-radius: 3px;
+  background: #FFFFFF;
+  color: #5E6C84;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 20px;
+}
+.board-list__footer_control-form {
+  display: flex;
+  align-items: center;
+}
+.board-list__footer_btn-add-card {
+  width: 77px;
+  height: 32px;
+  background: #5AAC44;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+.board-list__footer__btn-hide-form {
+  padding: 0px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  color: #172B4D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}

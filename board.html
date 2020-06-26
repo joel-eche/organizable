@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizable</title>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+  <link rel="stylesheet" href="./assets/styles/dashboard.css" />
+  <!--Quitar-->
+  <link rel="stylesheet" href="/assets/styles/board-lists.css">
+  <link rel="stylesheet" href="/assets/styles/board-list.css">
+  <link rel="stylesheet" href="/assets/styles/board-list-card.css">
+  <link rel="stylesheet" href="/assets/styles/board-list-form.css">
+  <!--Quitar-->
+</head>
+
+<body>
+  <default-header></default-header>
+  <board-panel></board-panel>
+  <main class="board-panelxxx">
+    
+    <!-- <header class="board-panel__header">
+      <h1 class="board-panel__header-title">Codeable</h1>
+      <form action="" method="post">
+        <button type="submit" class="board-panel__btn">
+          <i class="far fa-star board-panel__btn-star"></i>
+        </button>
+      </form>
+      <form action="" method="post">
+        <button type="submit" class="board-panel__btn">
+          <i class="far fa-window-close board-panel__btn-delete"></i>
+        </button>
+      </form>
+    </header> -->
+    <div class="board-panel__body">
+      <div id="board-lists">
+        <div class="board-list">
+          <header class="board-list__header">
+            <div class="board-list__title">
+              <h2 class="board-list__title-text">To Do</h2>
+              <form action="">
+                <input class="board-list__title-input hide" type="text" name="name" id="">
+              </form>
+            </div>
+            <form action="" method="post">
+              <button type="submit" class="board-list__delete">
+                <i class="far fa-window-close"></i>
+              </button>
+            </form>
+          </header>
+          <div class="board-list__body">
+            <div class="board-list-cards">
+              <div class="board-list-card">
+                <div class="board-list-card__tags">
+                  <div class="board-list-card__tag"></div>
+                  <div class="board-list-card__tag"></div>
+                </div>
+                <div class="board-list-card__body">
+                  <p class="board-list-card__body-title">Login & logout</p>
+                  <span class="board-list-card__body-checklist">
+                    <i class="far fa-check-square"></i>
+                    <span>0/2</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="board-list__footer">
+            <div>
+              <button class="board-list__footer_btn-add-another-card">
+                <i class="fas fa-plus"></i>
+                Add another card
+              </button>
+            </div>
+            <div>
+              <form action="" method="post">
+                <input type="text" name="" id="" placeholder="Enter a title for this card..."
+                  class="board-list__footer__form-title-card">
+                <div class="board-list__footer_control-form">
+                  <button type="submit" class="board-list__footer_btn-add-card">Add Card</button>
+                  <button class="board-list__footer__btn-hide-form">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="board-list-form">
+          <div class="board-list-form__panel-button">
+            <button class="board-list-form__btn-add-a-list">
+              <i class="fas fa-plus"></i>
+              Add a list
+            </button>
+          </div>
+          <div class="board-list-form__panel-form">
+            <form action="" method="post">
+              <input type="text" name="" id="" placeholder="Enter list title..." class="board-list-form__form-title-list">
+              <div class="board-list-form__control-form">
+                <button type="submit" class="board-list-form__btn-add-list">Add List</button>
+                <button class="board-list-form__btn-hide-form">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/35d6a5945d.js" crossorigin="anonymous"></script>
+  <!--Modules-->
+  <!--Components-->
+  <script src="./components/DefaultHeader.js"></script>
+  <script type="module" src="./components/BoardDetail/BoardPanel.js"></script>
+  <script type="module" src="./components/BoardDetail/BoardPanelHeader.js"></script>
+  <script type="module" src="./components/BoardDetail/BoardPanelLists.js"></script>
+  <script type="module" src="./components/BoardDetail/BoardList.js"></script>
+</body>
+
+</html>

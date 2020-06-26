@@ -1,0 +1,23 @@
+.board-panel__header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.board-panel__btn {
+  height: 32px;
+  width: 32px;
+  margin-left: 16px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.board-panel__btn.btn-starred:hover, .board-panel__btn.btn-starred.active {
+  color: #C3BE0E;
+}

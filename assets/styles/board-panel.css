@@ -1,0 +1,36 @@
+.board-panel {
+  height: calc(100% - 40px  );
+}
+
+.board-panel__body {
+  display: flex;
+}
+
+/* colors */
+.blue {
+  background-color: #0079BF;
+}
+.orange {
+  background-color: #D29034;
+}
+.green {
+  background-color: #519839;
+}
+.red {
+  background-color: #B04632;
+}
+.purple {
+  background-color: #89609E;
+}
+.pink {
+  background-color: #CD5A90;
+}
+.lime {
+  background-color: #4BBF6B;
+}
+.sky {
+  background-color: #0AAECB;
+}
+.grey {
+  background-color: #838C90;
+}

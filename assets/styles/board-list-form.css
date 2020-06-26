@@ -1,0 +1,72 @@
+.board-list-form {
+  width: 272px;
+}
+
+.board-list-form *{
+  font-family: Roboto;
+}
+
+.board-list-form__panel-form {
+  padding: 8px;
+  background: #EBECF0;
+  border-radius: 3px;
+}
+
+.board-list-form__btn-add-a-list {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 3px;
+  border: none;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+}
+
+.board-list-form__form-title-list {
+  width: 100%;
+  height: 24px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+  background: #FFFFFF;
+  border: 1px solid #0079BF;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #5E6C84;
+}
+
+.board-list-form__control-form {
+  display: flex;
+  align-items: center;
+}
+
+.board-list-form__btn-add-list {
+  width: 77px;
+  height: 32px;
+  background: #5AAC44;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+}
+
+.board-list-form__btn-hide-form {
+  padding: 0px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  color: #172B4D;
+}
