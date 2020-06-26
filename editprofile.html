@@ -19,25 +19,26 @@
         <a href="http://" id="logout">Log out</a>
       </div>
       <div class="contentForm">
-        <div class="wrapperForm wrapperFormProfile">
-          <form action="" class="formProfile">
+        <div class="wrapperForm wrapperFormEditprofile">
+          <form action="" class="form formSignup">
             <label for="userName">Username</label>
-            <p id="userName" name="userName"></p>
+            <input id="userName" type="text" id="userName" name="userName" />        
             <label for="email">Email</label>
-            <p id="email" name="email"></p>
+            <input type="email" id="email" name="email" />
             <label for="firstName">First Name</label>
-            <p id="firstName" name="firstName"></p>
+            <input type="text" id="firstName" name="firstName" />
             <label for="lastName">Last Name</label>
-            <p id="lastName" name="lastName"></p>
+            <input type="text" id="lastName" name="lastName" />
             <div class="wrapperButton">
-              <input id="editButton" type="submit" value="Edit" />
-              <input id="deleteButton" type="submit" value="Delete" />
+              <input id="saveButton" type="submit" value="Save" />
+              <input id="cancelButton" type="submit" value="Cancel" />
             </div>
           </form>
         </div>
+        </form>
       </div>
     </div>
-    <script src="profile.js"></script>
     <script src="logout.js"></script>
+    <script src="editprofile.js"></script>
   </body>
 </html>

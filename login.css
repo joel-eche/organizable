@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: Roboto;
+  margin: 0px;
+}
+
+.header {
+  background: #58595a;
+  width: auto;
+  height: 40px;
+  text-align: center;
+}
+.header img {
+  margin-top: 8px;
+}
+.contentBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contentSideBar {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+.contentSideBar a {
+  height: 32px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #172b4d;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 8px;
+  padding-left: 32px;
+}
+.contentSideBar a:hover {
+  background: #e4f0f6;
+  border-radius: 4px;
+  color: #0079bf;
+}
+.contentForm {
+  width: 660px;
+}
+.wrapperForm {
+  margin: 206px auto auto auto;
+  width: 450px;
+  height: 354px;
+  background: #f4f5f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  position: relative;
+}
+.wrapperFormSignup {
+  margin: 122px auto auto auto;
+  width: 412px;
+  height: 532px;
+}
+.wrapperFormEditprofile {
+  margin: 97px auto auto auto;
+  width: 412px;
+  height: 458px;
+}
+.wrapperFormProfile {
+  margin: 98px auto auto auto;
+  width: 412px;
+  height: 456px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 59px 113px auto 113px;
+  position: absolute;
+}
+.formSignup {
+  margin: 50px 94px auto 94px;
+}
+.formProfile {
+  margin: 34px 94px auto 94px;
+  position: absolute;
+}
+.formProfile p {
+  background: #fafbfc;
+  border: 1px solid #ebecf0;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  width: 224px;
+  height: 26px;
+  padding-top: 6px;
+  padding-left: 8px;
+}
+.formProfile label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #172b4d;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.form label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #172b4d;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.form input {
+  background: #ffffff;
+  border: 1px solid #0079bf;
+  border-radius: 3px;
+  margin-bottom: 6px;
+  width: 224px;
+  height: 32px;
+}
+.form a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0079bf;
+  text-decoration: none;
+  margin: 10px auto auto auto;
+}
+#loginButton {
+  width: 77px;
+  height: 32px;
+  background: #5aac44;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  margin: 10px auto 17px auto;
+  cursor: pointer;
+}
+#createButton {
+  width: 77px;
+  height: 32px;
+  background: #5aac44;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  margin: 23px auto 17px auto;
+  cursor: pointer;
+}
+.wrapperButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+#saveButton {
+  width: 77px;
+  height: 32px;
+  background: #5aac44;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+#cancelButton {
+  width: 77px;
+  height: 32px;
+  background: #cf513d;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+#deleteButton {
+  width: 77px;
+  height: 32px;
+  background: #cf513d;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+#editButton {
+  width: 77px;
+  height: 32px;
+  background: #ebecf0;
+  border-radius: 3px;
+  border: none;
+  color: #172b4d;
+  cursor: pointer;
+}
+#IncorrectCredential {
+  color: red;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
