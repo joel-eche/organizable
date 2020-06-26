@@ -46,7 +46,7 @@ function editUser() {
       const dataUsernew = JSON.parse(localStorage.getItem("userStrg"));
       console.log(dataUsernew);
       console.log(data.email);
-      window.location.href = "main.html";
+      window.location.href = "index.html";
     })
     .catch((error) => console.log(error));
 }

@@ -8,16 +8,9 @@
   </head>
 
   <body>
-    <div class="header">
-      <img src="./img/logo.svg" alt="logo organizable" />
-    </div>
+    <default-header></default-header>
     <div class="contentBody">
-      <div class="contentSideBar">
-        <a href="main.html">My boards</a>
-        <a href="http://">Closed boars</a>
-        <a href="profile.html" id="profile">My Profile</a>
-        <a href="http://" id="logout">Log out</a>
-      </div>
+      <lateral-menu active-item="profile"></lateral-menu>
       <div class="contentForm">
         <div class="wrapperForm wrapperFormEditprofile">
           <form action="" class="form formSignup">
@@ -38,6 +31,8 @@
         </form>
       </div>
     </div>
+    <script type= "module" src="./components/DefaultHeader.js"></script>
+    <script type= "module" src="./components/LateralMenu.js"></script>
     <script src="logout.js"></script>
     <script src="editprofile.js"></script>
   </body>
