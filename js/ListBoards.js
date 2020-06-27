@@ -39,11 +39,10 @@ export async function renderClosedBoards() {
     closedBoards.appendChild(boardItem);
   });
 }
-if (starredWrapper){
+if (starredWrapper) {
   renderSavedBoards();
 }
 
-
 if (closedBoards) {
   renderClosedBoards();
-};
+}
