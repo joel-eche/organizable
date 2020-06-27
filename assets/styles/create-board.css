@@ -1,112 +1,110 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 .create-board__wrapper {
-    position: relative;
-    width: 272px;
-    margin: auto;
-    margin-top: 64px;
+  position: relative;
+  width: 272px;
+  margin: auto;
+  margin-top: 64px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .create-board__form {
-    width: 190px;
-    height: 70px;
-    border-radius: 3px;
-    padding: 6px 8px;
-    position: relative;
-    margin-right: 12px;
+  width: 190px;
+  height: 70px;
+  border-radius: 3px;
+  padding: 6px 8px;
+  position: relative;
+  margin-right: 12px;
 }
 
-
 .input-title {
-    width: 154px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.25);
-    border-style: none;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 16px;
-    color:rgba(255, 255, 255, 0.75);
-    font-family: 'Roboto', sans-serif;
-    padding-left: 4px;
+  width: 154px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-style: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Roboto", sans-serif;
+  padding-left: 4px;
 }
 
 ::placeholder {
-    color:rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .close-board-icon {
-    color: #F4F5F7;
-   margin-left: 2px;
+  color: #f4f5f7;
+  margin-left: 2px;
 }
 
 .btn-create-board {
-    position: absolute;
-    bottom: -35px;
-    left: 0px;
-    width: 109px;
-    height: 32px;
-    padding: 6px 12px;
-    background-color: #F4F5F7;
-    border-radius: 3px;
-    border-style: none;
+  position: absolute;
+  bottom: -35px;
+  left: 0px;
+  width: 109px;
+  height: 32px;
+  padding: 6px 9px;
+  background-color: #f4f5f7;
+  border-radius: 3px;
+  border-style: none;
 }
 
 .create-board__colors {
-    position: absolute;
-    width: 70px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    left: 75%;
-    top: 0px;
-    
+  position: absolute;
+  width: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  left: 75%;
+  top: 0px;
 }
 
 .icon-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-    margin-bottom: 5px;
-    border-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  border-style: none;
 }
 
-.blue{
-    background-color:#0079Bf;
+.blue {
+  background-color: #0079bf;
 }
 
 .mustard {
-   background-color: #D29034; 
+  background-color: #d29034;
 }
 
 .green {
-    background-color: #519839;
+  background-color: #519839;
 }
 
 .red {
-    background-color: #B04632;
+  background-color: #b04632;
 }
 
 .purple {
-    background-color: #89609E;
+  background-color: #89609e;
 }
 
 .pink {
-    background-color: #CD5A90;
+  background-color: #cd5a90;
 }
 
 .ligth-green {
-    background-color: #4BBF6B;
+  background-color: #4bbf6b;
 }
 
 .light-blue {
-    background-color: #0AAECB;
+  background-color: #0aaecb;
 }
 
 .gray {
-    background-color: #838c90;
+  background-color: #838c90;
 }
